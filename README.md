@@ -1,4 +1,4 @@
-### Sistema de Gerenciamento de Candidatos - CNH Social
+### Gerenciador de cadastros - CNH Social
 
 Este repositório contém o código-fonte de um sistema desenvolvido para gerenciar candidatos ao projeto CNH Social. O sistema foi construído utilizando Python e o framework Django, com Bootstrap 5 para a interface de usuário. Para o banco de dados de teste, utilizou-se o SQLite.
 
