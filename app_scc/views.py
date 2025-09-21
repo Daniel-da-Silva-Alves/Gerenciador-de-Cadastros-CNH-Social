@@ -200,6 +200,7 @@ def form_correcao_jm(request, id):
             candidatos = form.save(commit=False)
             candidatos.exame_medico = form.cleaned_data['exame_medico']
             candidatos.justificativas_auditoria = form.cleaned_data ['justificativas_auditoria_jm']
+            candidatos.justificativas_auditoria_jm = form.cleaned_data ['justificativas_auditoria_jm']
 
             candidatos.save()
 
@@ -227,6 +228,7 @@ def form_correcao_crt(request, id):
             candidatos.exame_teorico = form.cleaned_data['exame_teorico']
             candidatos.curso_direcao = form.cleaned_data['curso_direcao']
             candidatos.justificativas_auditoria = form.cleaned_data['justificativas_auditoria_crt']
+            candidatos.justificativas_auditoria_crt = form.cleaned_data['justificativas_auditoria_crt']
             candidatos.save()
             return redirect('lista_candidatos_correcao')
         else:
@@ -248,6 +250,7 @@ def form_correcao_cedv(request, id):
             messages.success(request, 'Correção realizada com sucesso! ✔🔧😁')
             candidatos.exame_direcao = form.cleaned_data['exame_direcao']
             candidatos.justificativas_auditoria = form.cleaned_data['justificativas_auditoria_cedv']
+            candidatos.justificativas_auditoria_cedv = form.cleaned_data['justificativas_auditoria_cedv']
             candidatos.save()
             return redirect('lista_candidatos_correcao')
         else:
@@ -275,6 +278,7 @@ def form_correcao_cnh(request, id):
             candidatos.servico = form.cleaned_data['servico']
             candidatos.emissao_cnh = form.cleaned_data['emissao_cnh']
             candidatos.justificativas_auditoria = form.cleaned_data['justificativas_auditoria_']
+            candidatos.justificativas_auditoria_cnh = form.cleaned_data['justificativas_auditoria_cnh']
             candidatos.save()
             return redirect('lista_candidatos_correcao')
         else:

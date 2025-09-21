@@ -1,6 +1,6 @@
-﻿asgiref==3.6.0
+﻿asgiref==3.8.1
 crispy-bootstrap5==0.7
-Django==3.2.16
+Django==5.1.5
 django-auditlog==2.2.1
 django-crispy-forms==1.14.0
 django-jazzmin==2.6.0
